@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "537875786266",
+    "project_id": "price-radar-11698",
+    "storage_bucket": "price-radar-11698.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537875786266:android:03722f35bbb075db1dbfa3",
+        "android_client_info": {
+          "package_name": "com.example.price_radar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537875786266-b0cjb2ktp8g6flirs6q5siarog3hbe3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.price_radar",
+            "certificate_hash": "7900ca66e05a2c0982925978ed7cc3acb8dcbebb"
+          }
+        },
+        {
+          "client_id": "537875786266-94n10f29tmpjgfgkug4finda64plk697.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJwZCQ87zYoOh4aek2ZTSkgHGdXAg5iJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537875786266-94n10f29tmpjgfgkug4finda64plk697.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
