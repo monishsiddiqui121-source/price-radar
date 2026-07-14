@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'app_colors.dart';
 
 class AppTheme {
@@ -8,10 +9,20 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.background,
 
     colorScheme: ColorScheme.fromSeed(
-      seedColor: AppColors.premium,
+      seedColor: AppColors.primary,
       brightness: Brightness.light,
     ),
 
-    fontFamily: 'SF Pro Display',
+    splashFactory: InkRipple.splashFactory,
+
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      centerTitle: false,
+    ),
+
+    dividerColor: AppColors.border,
+
+    cardColor: AppColors.card,
   );
 }
