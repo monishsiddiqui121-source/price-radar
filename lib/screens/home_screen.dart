@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme/app_spacing.dart';
+import '../features/scanner/screens/scanner_screen.dart';
 import '../widgets/appbar/premium_app_bar.dart';
 import '../widgets/home/quick_action_card.dart';
 import '../widgets/home/section_title.dart';
@@ -8,6 +9,15 @@ import '../widgets/search/premium_search_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  void _openScanner(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const ScannerScreen(),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                   QuickActionCard(
                     icon: Icons.camera_alt_outlined,
                     title: "Scan Screenshot",
-                    onTap: () {},
+                    onTap: () => _openScanner(context),
                   ),
 
                   QuickActionCard(
@@ -85,55 +95,39 @@ class HomeScreen extends StatelessWidget {
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-
                 itemCount: 4,
 
                 itemBuilder: (context, index) {
-
                   return Container(
-
                     margin: const EdgeInsets.only(bottom: 14),
-
                     padding: const EdgeInsets.all(18),
 
                     decoration: BoxDecoration(
-
                       color: Colors.white,
-
                       borderRadius: BorderRadius.circular(20),
-
                     ),
 
                     child: Row(
-
                       children: [
 
                         Container(
-
                           width: 70,
-
                           height: 70,
 
                           decoration: BoxDecoration(
-
                             color: Colors.grey.shade200,
-
                             borderRadius: BorderRadius.circular(18),
-
                           ),
 
                           child: const Icon(
                             Icons.shopping_bag_outlined,
                           ),
-
                         ),
 
                         const SizedBox(width: 18),
 
                         const Expanded(
-
                           child: Column(
-
                             crossAxisAlignment:
                                 CrossAxisAlignment.start,
 
@@ -154,37 +148,24 @@ class HomeScreen extends StatelessWidget {
                               ),
 
                             ],
-
                           ),
-
                         ),
 
                         ElevatedButton(
-
                           onPressed: () {},
-
                           child: const Text("View"),
-
                         )
 
                       ],
-
                     ),
-
                   );
-
                 },
-
               ),
 
             ],
-
           ),
-
         ),
-
       ),
-
     );
   }
 }
